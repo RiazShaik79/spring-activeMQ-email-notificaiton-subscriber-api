@@ -1,5 +1,7 @@
 package io.javabrains;
 
+import java.security.NoSuchAlgorithmException;
+
 import javax.jms.ConnectionFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,5 +50,5 @@ public class Application {
     System.out.println("Sending an email message.");
     jmsTemplate.convertAndSend("mailbox", new Email("info@example.com", "Hello"));
   }
-
+   
 }

@@ -1,0 +1,13 @@
+server:
+   port: 8447
+   ssl:
+      enabled: true
+#     client-auth: need
+      key-store: classpath:notify-service-cert.jks
+      key-store-password: India330$$
+      keyStoreType: JKS
+      keyStoreProvider: SUN
+      keyAlias: notify-service-cert
+      trust-store: classpath:notify-service-cert.jks
+      trust-store-password: India330$$
+      trust-store-type: JKS
